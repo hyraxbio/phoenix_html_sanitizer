@@ -5,7 +5,7 @@ defmodule PhoenixHtmlSanitizer.Mixfile do
     [
       app: :phoenix_html_sanitizer,
       version: "1.1.1",
-      elixir: "~> 1.0",
+      elixir: "~> 1.16",
       description: "HTML sanitizer for Phoenix",
       source_url: "https://github.com/elixirstatus/phoenix_html_sanitizer",
       package: [
@@ -17,7 +17,7 @@ defmodule PhoenixHtmlSanitizer.Mixfile do
       ],
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
-      deps: deps
+      deps: deps()
     ]
   end
 
